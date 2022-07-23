@@ -55,6 +55,6 @@ module.exports = {
     })],
   },
   devServer: {
-    port: 9010,
+    port: 9000,
   },
 };

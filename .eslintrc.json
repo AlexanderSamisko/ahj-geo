@@ -42,6 +42,18 @@
         ],
         "no-shadow": [
             "warn"
+        ],
+        "consistent-return": [
+            "warn"
+        ],
+        "no-useless-escape": [
+            "off"
+        ],
+        "no-use-before-define": [
+            "off"
+        ],
+        "no-inner-declarations": [
+            "warn"
         ]
     }
 }

@@ -1,6 +1,4 @@
 import AtteninonField from './AttentionField';
 import Desk from './Desk';
 
-
-let desk = new Desk();
-
+const desk = new Desk();
