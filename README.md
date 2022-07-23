@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/gyf8tyfth7yyqv2l?svg=true)](https://ci.appveyor.com/project/AlexanderSamisko/ahj-geo)

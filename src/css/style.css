@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --sq-left: 0;
+  --sq-width: 20px;
+}
+
+body {
+    background-color: black;
+    background-image: url('../img/office-background.jpg');
+    background-attachment: fixed;
+    background-position: left 5vh top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    font-size: 1vmax;
+    width: 98vw;
+    height: 94vh;
+    color: black;
+    display: flex;
+    position: relative;
+}
+
+.desk {
+    width: 45vw;
+    height: 90vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    background-image: url('../img/desk.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+}
+
+.desk-header {
+    width: 100%;
+    height: 7vh;
+    background-color: #dcdcdc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.desk-header-dot {
+    width: 3vh;
+    height: 3vh;
+    background-color: #c9c8c9;
+    border-radius: 50%;
+    margin-left: 4vh;
+}
+
+.desk-body {
+    width: 45vw;
+    height: 78vh;
+    display: flex;
+    overflow: auto;
+}
+
+.desk-input {
+    width: 90%;
+    height: 4vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(204, 255, 0);
+}
+
+.desk-scale-part {
+    width: 2vh;
+    background-color: rgb(204, 255, 0);
+    align-self: flex-end;
+    margin-left: 5vw;
+    height: 78vh;
+    position: fixed;
+}
+
+.desk-display-part {
+    width: 38vw;
+    margin-left: 7vh;
+
+}
+
+.card {
+    margin-top: 4vh;
+    width: 30vw;
+    margin-left: 4vw;
+    padding: 1vw;
+    height: fit-content;
+    font-size: 2vh;
+    border: 4px solid #c9c8c9;
+    border-radius: 1vw;
+    color:rgb(255, 89, 0);
+    background-color: black;
+    box-shadow: 10px 5px 5px rgb(255, 89, 0);
+    position: relative;
+}
+
+.card-text-and-date-part {
+    display: flex;
+    width: 28vw;
+    justify-content: space-between;
+}
+
+.card-text-part {
+    width: 18vw;
+
+}
+
+.card-date-part {
+    width: 8vw;
+    margin-left: 2vw;
+}
+
+.card-geo-part {
+    width: fit-content;
+    margin-top: 1vh;
+}
+
+.card-before {
+    position: absolute;
+    margin-right: 4vw;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    left: var(--sq-left);
+    top: var(--sq-top);
+    width: 3vmax;
+    height: 3vmax;
+    border-radius: 50%;
+    background-image: url("../img/Smile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .attention-field {
+    width: 45vw;
+    height: 33vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    background-color: chocolate;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    padding: 1vw;
+  }
+
+  .attention-card {
+    width: 40vw;
+    border: 3px solid wheat;
+    padding: 1vw;
+    border-radius: 1vw;
+    color: wheat;
+    font-size: 1vmax;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .attention-card-header {
+    width: 37.5vw;
+    border-bottom: 3px solid wheat;
+    color: wheat;
+    font-size: 1vmax;
+    padding-bottom: 0.5vmax;
+  }
+
+  .attention-card-content {
+    margin-top: 0.5vmax;
+    padding-bottom: 0.5vmax;
+  }
+
+  .attention-card-label {
+    display: block;
+  }
+
+  .attention-card-input {
+    display: block;
+    margin-top: 0.5vmax;
+    width: 100%;
+  }
+
+  .attention-card-buttons-block {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .attention-card-button {
+    margin-top: 1vh;
+    padding: 1vmin;
+    border: 3px solid wheat;
+    border-radius: 1vw;
+    margin-right: 2vh;
+    cursor: pointer;
+  }
+
+  .ok:hover {
+    box-shadow: 10px 5px 5px wheat;
+  }
+
+  .nope:hover {
+    box-shadow: 10px 5px 5px rgb(255, 89, 0);
+  }
+
+  .note {
+    position: absolute;
+    left: 35vw;
+    top: 30vh;
+    height: fit-content;
+    width: 20vw;
+    background-color: cadetblue;
+    color: orange;
+    font-size: 1vmax;
+    text-align: center;
+    border: 3px solid orange;
+    border-radius: 1vmax;
+    padding-bottom: 1vh;
+  }
+
+  .note-header {
+    width: 100%;
+    height: fit-content;
+    padding: 1vh;
+  }
+
+  .note-content {
+    width: 100%;
+    height: fit-content;
+    padding: 1vh;
+  }
+
+  .note-button {
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1vh;
+    cursor: pointer;
+    border: 3px solid orange;
+    border-radius: 1vmax;
+  }
